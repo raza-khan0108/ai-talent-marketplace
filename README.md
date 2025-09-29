@@ -1,4 +1,4 @@
-# 🌐 AI Talent Marketplace on ICP
+# AI Talent Marketplace on ICP
 
 A decentralized platform connecting AI professionals with companies using the Internet Computer Protocol (ICP), featuring on-chain profiles, smart contract engagements, and AI-powered matching.
 
@@ -6,7 +6,7 @@ A decentralized platform connecting AI professionals with companies using the In
 ![Motoko](https://img.shields.io/badge/Smart_Contracts-Motoko-orange)
 ![React](https://img.shields.io/badge/Frontend-React-61DAFB)
 
-## 🚀 Features
+## Features
 
 - **On-Chain Profiles**  
   Talent and company profiles stored securely on ICP blockchain
@@ -19,7 +19,7 @@ A decentralized platform connecting AI professionals with companies using the In
 - **Decentralized Storage**  
   All data stored on-chain via ICP canisters
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Component          | Technology |
 |--------------------|------------|
@@ -29,7 +29,7 @@ A decentralized platform connecting AI professionals with companies using the In
 | Authentication    | Internet Identity |
 | CI/CD             | GitHub Actions |
 
-## 📦 Project Structure
+## Project Structure
 ai-talent-marketplace/
 ├── src/
 │ ├── ai_engine/ # Matching algorithm canister
@@ -40,7 +40,7 @@ ai-talent-marketplace/
 └── README.md
 
 
-## 🏁 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [DFX SDK](https://smartcontracts.org/docs/current/developer-docs/setup/install/)
