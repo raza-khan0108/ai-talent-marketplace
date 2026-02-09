@@ -1,67 +1,192 @@
-# AI Talent Marketplace on ICP
 
-A decentralized platform connecting AI professionals with companies using the Internet Computer Protocol (ICP), featuring on-chain profiles, smart contract engagements, and AI-powered matching.
+# 🚀 AI Talent Marketplace on Internet Computer (ICP)
 
-![ICP Blockchain](https://img.shields.io/badge/Blockchain-Internet_Computer_Protocol-blue)
-![Motoko](https://img.shields.io/badge/Smart_Contracts-Motoko-orange)
-![React](https://img.shields.io/badge/Frontend-React-61DAFB)
+A **fully decentralized AI talent marketplace** built on the **Internet Computer Protocol (ICP)** that connects AI professionals with companies through **on-chain profiles, smart contract–based engagements, escrow payments, and AI-powered talent matching**.
 
-## Features
+This platform removes intermediaries, ensures transparency, and enables trustless hiring using blockchain-native primitives.
 
-- **On-Chain Profiles**  
-  Talent and company profiles stored securely on ICP blockchain
-- **AI Matching Engine**  
-  Algorithm matching skills to project requirements
-- **Smart Contract Escrow**  
-  Secure milestone-based payments
-- **Internet Identity**  
-  Passwordless authentication using Web3 identity
-- **Decentralized Storage**  
-  All data stored on-chain via ICP canisters
+---
 
-## Tech Stack
+## 🔗 Tech Badges
 
-| Component          | Technology |
-|--------------------|------------|
-| Blockchain         | Internet Computer Protocol (ICP) |
-| Smart Contracts   | Motoko |
-| Frontend          | React + TypeScript |
-| Authentication    | Internet Identity |
-| CI/CD             | GitHub Actions |
+- **Blockchain:** Internet Computer Protocol (ICP)
+- **Smart Contracts:** Motoko
+- **Frontend:** React + TypeScript
+- **Auth:** Internet Identity
+- **CI/CD:** GitHub Actions
 
-## Project Structure
+---
+
+## ✨ Key Features
+
+### 🔐 On-Chain Profiles
+- Immutable talent and company profiles stored in ICP canisters  
+- Verifiable skills, experience, and reputation
+
+### 🤖 AI Matching Engine
+- Matches project requirements with talent skill vectors  
+- Optimized for relevance, experience, and availability
+
+### 💰 Smart Contract Escrow
+- Milestone-based payments using canister-controlled escrow  
+- Funds released only after milestone approval
+
+### 🪪 Internet Identity Authentication
+- Passwordless Web3 login using Internet Identity  
+- Secure, decentralized authentication
+
+### 🌐 Fully Decentralized Storage
+- All data stored on-chain via ICP canisters  
+- No centralized backend or database
+
+---
+
+## 🧱 Architecture Overview
+
+```
+User (Browser)
+   |
+   | Internet Identity
+   v
+React Frontend (TypeScript)
+   |
+   | Canister Calls (HTTP / AgentJS)
+   v
+ICP Canisters (Motoko)
+   ├── Profiles Canister
+   ├── Projects Canister
+   ├── Escrow / Payments Canister
+   └── AI Matching Engine Canister
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer            | Technology |
+|------------------|------------|
+| Blockchain       | Internet Computer Protocol (ICP) |
+| Smart Contracts  | Motoko |
+| Frontend         | React + TypeScript |
+| Authentication   | Internet Identity |
+| AI Logic         | On-chain matching canister |
+| CI/CD            | GitHub Actions |
+
+---
+
+## 📁 Project Structure
+
+```
 ai-talent-marketplace/
+│
 ├── src/
-│ ├── ai_engine/ # Matching algorithm canister
-│ ├── backend/ # Core canisters (profiles, projects, contracts)
-│ └── frontend/ # React frontend application
-├── dfx.json # DFX configuration
+│   ├── ai_engine/        # AI matching algorithm canister
+│   ├── backend/          # Core Motoko canisters (profiles, projects, escrow)
+│   └── frontend/         # React frontend application
+│
+├── dfx.json              # DFX configuration
 ├── .gitignore
 └── README.md
+```
 
+---
 
-## Getting Started
+## ⚙️ Getting Started
 
-### Prerequisites
-- [DFX SDK](https://smartcontracts.org/docs/current/developer-docs/setup/install/)
-- Node.js ≥16
-- GitHub account
+### ✅ Prerequisites
 
-### Installation
+Make sure you have the following installed:
+
+- **DFX SDK**  
+  https://smartcontracts.org/docs/current/developer-docs/setup/install/
+- **Node.js** ≥ 16  
+- **Git**
+- **GitHub account**
+
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the Repository
 ```bash
-# Clone repository
 git clone https://github.com/raza-khan0108/ai-talent-marketplace.git
 cd ai-talent-marketplace
+```
 
-# Install dependencies
+### 2️⃣ Install Dependencies
+```bash
 npm install
+```
 
-# Start local ICP network
+### 3️⃣ Start Local ICP Network
+```bash
 dfx start --background
+```
 
-# Deploy canisters
+### 4️⃣ Deploy Canisters
+```bash
 dfx deploy
+```
 
-# Start frontend
+### 5️⃣ Start Frontend
+```bash
 cd src/frontend
+npm install
 npm start
+```
+
+Frontend will be available at:
+```
+http://localhost:3000
+```
+
+---
+
+## 🔍 Example Use Cases
+
+- Hire AI engineers securely with escrow-backed contracts  
+- Freelancers showcase verified on-chain profiles  
+- DAOs sourcing AI talent without intermediaries  
+- Transparent milestone-based project execution  
+
+---
+
+## 🧠 Future Enhancements
+
+- Reputation scoring system  
+- DAO-based dispute resolution  
+- Tokenized incentives for talent  
+- Multi-chain interoperability  
+- Advanced ML-based recommendation engine  
+
+---
+
+## 🧪 Testing
+
+```bash
+dfx test
+```
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to open issues or submit pull requests.
+
+---
+
+## 👤 Author
+
+**Raza Khan**  
+- GitHub: https://github.com/raza-khan0108
+
+---
+
+⭐ If you find this project useful, give it a star!
